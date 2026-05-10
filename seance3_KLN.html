@@ -74,6 +74,10 @@ main{padding:10px;display:flex;flex-direction:column;gap:9px;}
 #fs-video{width:100%;max-height:calc(100vh - 60px);object-fit:contain;}
 #fs-close{position:absolute;top:16px;right:16px;width:44px;height:44px;background:rgba(255,255,255,.15);border:none;border-radius:50%;color:#fff;font-size:22px;cursor:pointer;display:flex;align-items:center;justify-content:center;backdrop-filter:blur(4px);}
 #fs-title{position:absolute;bottom:20px;left:0;right:0;text-align:center;font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:16px;color:#fff;text-transform:uppercase;letter-spacing:1px;opacity:.8;}
+
+.back-btn{display:flex;align-items:center;gap:5px;color:var(--muted);font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;text-decoration:none;margin-bottom:12px;width:fit-content;}
+.back-btn:active{color:var(--gold);}
+.back-arrow{font-size:16px;line-height:1;}
 </style>
 </head>
 <body>
@@ -91,6 +95,7 @@ main{padding:10px;display:flex;flex-direction:column;gap:9px;}
   <div id="fs-title"></div>
 </div>
 <header>
+  <a class="back-btn" href="index.html"><span class="back-arrow">&#8592;</span> Menu</a>
   <div class="h-row">
     <div class="kln">KLN</div>
     <div>
@@ -162,7 +167,7 @@ main{padding:10px;display:flex;flex-direction:column;gap:9px;}
 <div class="tag">Haut des pecs</div>
 <div class="exo-name">Pec Fly</div>
 <div class="meta"><span class="pill gold">2x15</span>
-<span class="pill dark">Sans charge</span></div>
+<span class="pill dark">5 kg / côté</span></div>
 <div class="recup-line">&#9201; 1 min de récup</div>
 </div><div class="chev">&#8250;</div></div>
 <div class="card-body" id="body-pec_fly">
@@ -237,14 +242,14 @@ main{padding:10px;display:flex;flex-direction:column;gap:9px;}
 <div class="tag">Bas du dos</div>
 <div class="exo-name">Extension lombaire</div>
 <div class="meta"><span class="pill gold">2x15</span>
-<span class="pill dark">20 kg</span></div>
+<span class="pill dark">10 kg</span></div>
 <div class="recup-line">&#9201; 1 min de récup</div>
 </div><div class="chev">&#8250;</div></div>
 <div class="card-body" id="body-extension_lombaire">
 <div class="section-label">Consignes</div><ul class="consignes"><li>Règle la machine à hauteur des hanches</li><li>Pieds dans l'axe</li><li>Dos droit au départ</li><li>Pas d'hyperextension en fin</li><li>Bras croisés sur la poitrine</li><li>Descente lente, remontée rapide</li></ul>
 <div class="section-label">Séries</div>
 <div class="tracker">
-<div class="warmup-label">Série 0 — Échauffement &nbsp;<span class="warmup-detail">10 kg · 15 reps</span></div>
+<div class="warmup-label">Série 0 — Échauffement &nbsp;<span class="warmup-detail">5 kg · 15 reps</span></div>
 <div class="boxes" id="boxes-extension_lombaire">
 <div class="sbox warmup" id="box-extension_lombaire-0"><span>0</span></div>
 <div class="sbox" id="box-extension_lombaire-1"><span>1</span></div>

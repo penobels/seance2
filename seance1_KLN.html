@@ -80,6 +80,10 @@ main{padding:10px;display:flex;flex-direction:column;gap:9px;}
 #fs-video{width:100%;max-height:calc(100vh - 60px);object-fit:contain;}
 #fs-close{position:absolute;top:16px;right:16px;width:44px;height:44px;background:rgba(255,255,255,.15);border:none;border-radius:50%;color:#fff;font-size:22px;cursor:pointer;display:flex;align-items:center;justify-content:center;backdrop-filter:blur(4px);}
 #fs-title{position:absolute;bottom:20px;left:0;right:0;text-align:center;font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:16px;color:#fff;text-transform:uppercase;letter-spacing:1px;opacity:.8;}
+
+.back-btn{display:flex;align-items:center;gap:5px;color:var(--muted);font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;text-decoration:none;margin-bottom:12px;width:fit-content;}
+.back-btn:active{color:var(--gold);}
+.back-arrow{font-size:16px;line-height:1;}
 </style>
 </head>
 <body>
@@ -100,6 +104,7 @@ main{padding:10px;display:flex;flex-direction:column;gap:9px;}
   <div id="fs-title"></div>
 </div>
 <header>
+  <a class="back-btn" href="index.html"><span class="back-arrow">&#8592;</span> Menu</a>
   <div class="h-row"><div class="kln">KLN</div><div><div class="h-title">Séance 1</div><div class="h-sub">Muscles posturaux</div></div></div>
   <div class="pbar-outer"><div class="pbar-inner" id="pbar"></div></div>
   <div class="pbar-txt" id="pbartxt">0 / 0 séries</div>
@@ -185,7 +190,7 @@ main{padding:10px;display:flex;flex-direction:column;gap:9px;}
 <div class="vid-thumb" id="thumb-dev_militaire"><span class="play-icon">&#9654;</span></div>
 <div class="card-info">
 <div class="tag">Avant épaule</div>
-<div class="exo-name">Développé militaire machine</div>
+<div class="exo-name">Développé militaire</div>
 <div class="meta"><span class="pill gold">2x15</span>
 <span class="pill dark">10 kg</span></div>
 <div class="recup-line">&#9201; 1 min de récup</div>
