@@ -8,63 +8,56 @@
 <title>KLN Athletics — Programme P-E</title>
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;900&family=Barlow:wght@400;500;600&display=swap");
-:root{--gold:#D4A017;--bg:#0E0E0E;--s1:#1A1A1A;--s2:#232323;--s3:#2E2E2E;--txt:#F2F0EB;--muted:#666;--r:16px;}
+:root{--gold:#D4A017;--bg:#0E0E0E;--s1:#1A1A1A;--s2:#232323;--s3:#2E2E2E;--txt:#F2F0EB;--muted:#555;--r:16px;}
 *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;}
 body{font-family:"Barlow",sans-serif;background:var(--bg);color:var(--txt);min-height:100vh;padding-bottom:48px;}
 
-header{padding:48px 20px 32px;text-align:center;background:linear-gradient(180deg,#1c1400 0%,#0e0e0e 100%);}
-.kln-logo{font-family:"Barlow Condensed",sans-serif;font-weight:900;font-size:48px;color:var(--gold);letter-spacing:6px;border:3px solid var(--gold);display:inline-block;padding:4px 18px;border-radius:6px;margin-bottom:14px;}
-.prog-title{font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:18px;text-transform:uppercase;letter-spacing:3px;color:var(--muted);}
+header{padding:44px 20px 28px;text-align:center;background:linear-gradient(180deg,#1c1400 0%,#0e0e0e 100%);border-bottom:1px solid #1e1e1e;}
+.kln-logo{font-family:"Barlow Condensed",sans-serif;font-weight:900;font-size:46px;color:var(--gold);letter-spacing:6px;border:3px solid var(--gold);display:inline-block;padding:4px 18px;border-radius:6px;margin-bottom:12px;}
+.prog-title{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:14px;text-transform:uppercase;letter-spacing:4px;color:var(--muted);}
 
-main{padding:16px;}
+main{padding:14px 14px 0;}
 
-.week-label{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:3px;color:var(--gold);margin:24px 0 12px 4px;}
+.week-label{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:3px;color:var(--gold);margin:22px 0 10px 2px;}
 
 .seance-card{
   display:block;text-decoration:none;color:inherit;
-  background:var(--s1);border-radius:var(--r);border:1px solid #2a2a2a;
-  padding:18px 16px;margin-bottom:10px;
+  background:var(--s1);border-radius:var(--r);border:1px solid #252525;
+  padding:0;margin-bottom:9px;overflow:hidden;
   transition:border-color .2s, transform .1s;
-  position:relative;overflow:hidden;
+  position:relative;
 }
-.seance-card:active{transform:scale(.98);}
-.seance-card.open{border-color:var(--gold);}
+.seance-card:active{transform:scale(.985);border-color:var(--gold);}
 
-.card-accent{
-  position:absolute;left:0;top:0;bottom:0;width:4px;
-  background:var(--gold);border-radius:4px 0 0 4px;
-}
-.card-accent.s2{background:#D4A017;}
-.card-accent.s3{background:#D4A017;}
+.card-accent{position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--gold);}
 
-.card-inner{display:flex;align-items:center;gap:14px;padding-left:10px;}
+.card-inner{display:flex;align-items:center;gap:12px;padding:14px 12px 14px 16px;}
+
 .seance-num{
-  font-family:"Barlow Condensed",sans-serif;font-weight:900;font-size:42px;
-  color:var(--gold);line-height:1;min-width:32px;
+  font-family:"Barlow Condensed",sans-serif;font-weight:900;font-size:40px;
+  color:var(--gold);line-height:1;min-width:30px;
 }
-.seance-info{flex:1;}
-.seance-tag{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--gold);margin-bottom:3px;}
-.seance-name{font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:22px;text-transform:uppercase;line-height:1.1;margin-bottom:8px;}
-.seance-pills{display:flex;gap:6px;flex-wrap:wrap;}
-.pill{font-size:10px;font-weight:700;padding:3px 8px;border-radius:20px;}
+
+.seance-info{flex:1;min-width:0;}
+.seance-tag{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--gold);margin-bottom:2px;}
+.seance-name{font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:20px;text-transform:uppercase;line-height:1.1;margin-bottom:7px;}
+.seance-pills{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:9px;}
+.pill{font-size:10px;font-weight:700;padding:2px 8px;border-radius:20px;}
 .pill-gold{background:var(--gold);color:#000;font-family:"Barlow Condensed",sans-serif;}
-.pill-dark{background:var(--s3);color:var(--txt);border:1px solid #3a3a3a;}
-.seance-arrow{font-size:28px;color:var(--gold);opacity:.6;line-height:1;}
+.pill-dark{background:var(--s3);color:#aaa;border:1px solid #353535;}
 
-.exercises-list{margin-top:10px;padding-left:10px;border-top:1px solid #2a2a2a;padding-top:10px;}
-.ex-row{display:flex;align-items:center;gap:8px;padding:5px 0;font-size:12px;color:#aaa;}
-.ex-row::before{content:"\25BA";font-size:8px;color:var(--gold);flex-shrink:0;}
-.ex-name{flex:1;}
-.ex-detail{font-size:10px;color:var(--muted);white-space:nowrap;}
+.exercises-list{border-top:1px solid #252525;padding-top:9px;display:flex;flex-direction:column;gap:0;}
+.ex-row{display:flex;align-items:baseline;gap:7px;padding:3px 0;font-size:12px;}
+.ex-dot{width:4px;height:4px;border-radius:50%;background:var(--gold);flex-shrink:0;margin-top:5px;}
+.ex-name{flex:1;color:#bbb;}
+.ex-detail{font-size:10px;color:var(--muted);white-space:nowrap;font-family:"Barlow Condensed",sans-serif;font-weight:600;letter-spacing:.3px;}
 
-.finisher-badge{
-  background:linear-gradient(90deg,#FF9800,#F44336);
-  color:#fff;font-size:9px;font-weight:700;
-  padding:2px 7px;border-radius:20px;
-  font-family:"Barlow Condensed",sans-serif;letter-spacing:1px;
-}
+.badge-finisher{background:linear-gradient(90deg,#FF9800,#F44336);color:#fff;font-size:9px;font-weight:700;padding:1px 6px;border-radius:20px;font-family:"Barlow Condensed",sans-serif;letter-spacing:1px;white-space:nowrap;}
+.badge-biset{background:#1a2a3a;color:#5b9bd5;border:1px solid #2a4a6a;font-size:9px;font-weight:700;padding:1px 6px;border-radius:20px;font-family:"Barlow Condensed",sans-serif;letter-spacing:1px;white-space:nowrap;}
 
-footer{text-align:center;padding:24px 20px;color:var(--muted);font-size:11px;letter-spacing:1px;}
+.seance-arrow{font-size:24px;color:#333;line-height:1;flex-shrink:0;}
+
+footer{text-align:center;padding:28px 20px 16px;color:#333;font-size:10px;letter-spacing:2px;text-transform:uppercase;font-family:"Barlow Condensed",sans-serif;}
 </style>
 </head>
 <body>
@@ -75,11 +68,11 @@ footer{text-align:center;padding:24px 20px;color:var(--muted);font-size:11px;let
 </header>
 
 <main>
-  <div class="week-label">Semaine type</div>
+  <div class="week-label">Programme complet</div>
 
   <!-- SÉANCE 1 -->
   <a class="seance-card" href="seance1_KLN.html">
-    <div class="card-accent s1"></div>
+    <div class="card-accent"></div>
     <div class="card-inner">
       <div class="seance-num">1</div>
       <div class="seance-info">
@@ -87,20 +80,16 @@ footer{text-align:center;padding:24px 20px;color:var(--muted);font-size:11px;let
         <div class="seance-name">Muscles posturaux</div>
         <div class="seance-pills">
           <span class="pill pill-gold">6 exercices</span>
-          <span class="pill pill-dark">+ Finisher abdos</span>
           <span class="pill pill-dark">~60 min</span>
         </div>
         <div class="exercises-list">
-          <div class="ex-row"><span class="ex-name">Tirage vertical</span><span class="ex-detail">3×12 · 40 kg</span></div>
-          <div class="ex-row"><span class="ex-name">Tirage horizontal</span><span class="ex-detail">3×12 · 35 kg</span></div>
-          <div class="ex-row"><span class="ex-name">Élévation frontale</span><span class="ex-detail">2×15 · 10 kg</span></div>
-          <div class="ex-row"><span class="ex-name">Développé militaire</span><span class="ex-detail">2×15 · 10 kg</span></div>
-          <div class="ex-row"><span class="ex-name">Élévations latérales</span><span class="ex-detail">2×15 · 2,5 kg</span></div>
-          <div class="ex-row"><span class="ex-name">Face pull</span><span class="ex-detail">2×15 · 20 kg</span></div>
-          <div class="ex-row">
-            <span class="ex-name">Gainage · Russian Twist · Relevés</span>
-            <span class="finisher-badge">FINISHER</span>
-          </div>
+          <div class="ex-row"><div class="ex-dot"></div><span class="ex-name">Tirage vertical</span><span class="ex-detail">3×12 · 40 kg</span></div>
+          <div class="ex-row"><div class="ex-dot"></div><span class="ex-name">Tirage horizontal</span><span class="ex-detail">3×12 · 35 kg</span></div>
+          <div class="ex-row"><div class="ex-dot"></div><span class="ex-name">Élévation frontale</span><span class="ex-detail">2×15 · 10 kg</span></div>
+          <div class="ex-row"><div class="ex-dot"></div><span class="ex-name">Développé militaire</span><span class="ex-detail">2×15 · 10 kg</span></div>
+          <div class="ex-row"><div class="ex-dot"></div><span class="ex-name">Élévations latérales</span><span class="ex-detail">2×15 · 2,5 kg</span></div>
+          <div class="ex-row"><div class="ex-dot"></div><span class="ex-name">Face pull</span><span class="ex-detail">2×15 · 20 kg</span></div>
+          <div class="ex-row"><div class="ex-dot"></div><span class="ex-name">Gainage · Russian Twist · Relevés</span><span class="badge-finisher">FINISHER</span></div>
         </div>
       </div>
       <div class="seance-arrow">&#8250;</div>
@@ -109,7 +98,7 @@ footer{text-align:center;padding:24px 20px;color:var(--muted);font-size:11px;let
 
   <!-- SÉANCE 2 -->
   <a class="seance-card" href="seance2_KLN.html">
-    <div class="card-accent s2"></div>
+    <div class="card-accent"></div>
     <div class="card-inner">
       <div class="seance-num">2</div>
       <div class="seance-info">
@@ -120,12 +109,12 @@ footer{text-align:center;padding:24px 20px;color:var(--muted);font-size:11px;let
           <span class="pill pill-dark">~50 min</span>
         </div>
         <div class="exercises-list">
-          <div class="ex-row"><span class="ex-name">Chest Press</span><span class="ex-detail">2×15 · 15 kg/côté</span></div>
-          <div class="ex-row"><span class="ex-name">Développé couché assisté</span><span class="ex-detail">3×12 · 25-27 kg/côté</span></div>
-          <div class="ex-row"><span class="ex-name">Pec Fly</span><span class="ex-detail">2×15 · sans charge</span></div>
-          <div class="ex-row"><span class="ex-name">Élévation frontale</span><span class="ex-detail">2×15 · 10 kg</span></div>
-          <div class="ex-row"><span class="ex-name">Élévation latérale poulie</span><span class="ex-detail">2×15 · 2,5 kg</span></div>
-          <div class="ex-row"><span class="ex-name">Face Pull</span><span class="ex-detail">2×15 · 15 kg</span></div>
+          <div class="ex-row"><div class="ex-dot"></div><span class="ex-name">Chest Press</span><span class="ex-detail">2×15 · 15 kg/côté</span></div>
+          <div class="ex-row"><div class="ex-dot"></div><span class="ex-name">Développé couché assisté</span><span class="ex-detail">3×12 · 25-27 kg/côté</span></div>
+          <div class="ex-row"><div class="ex-dot"></div><span class="ex-name">Pec Fly</span><span class="ex-detail">2×15 · sans charge</span></div>
+          <div class="ex-row"><div class="ex-dot"></div><span class="ex-name">Élévation frontale</span><span class="ex-detail">2×15 · 10 kg</span></div>
+          <div class="ex-row"><div class="ex-dot"></div><span class="ex-name">Élévation latérale poulie</span><span class="ex-detail">2×15 · 2,5 kg</span></div>
+          <div class="ex-row"><div class="ex-dot"></div><span class="ex-name">Face Pull</span><span class="ex-detail">2×15 · 15 kg</span></div>
         </div>
       </div>
       <div class="seance-arrow">&#8250;</div>
@@ -134,7 +123,7 @@ footer{text-align:center;padding:24px 20px;color:var(--muted);font-size:11px;let
 
   <!-- SÉANCE 3 -->
   <a class="seance-card" href="seance3_KLN.html">
-    <div class="card-accent s3"></div>
+    <div class="card-accent"></div>
     <div class="card-inner">
       <div class="seance-num">3</div>
       <div class="seance-info">
@@ -145,12 +134,12 @@ footer{text-align:center;padding:24px 20px;color:var(--muted);font-size:11px;let
           <span class="pill pill-dark">~55 min</span>
         </div>
         <div class="exercises-list">
-          <div class="ex-row"><span class="ex-name">Chest Press</span><span class="ex-detail">3×12 · 15 kg/côté</span></div>
-          <div class="ex-row"><span class="ex-name">Tirage horizontal prise serrée</span><span class="ex-detail">3×12 · 35 kg</span></div>
-          <div class="ex-row"><span class="ex-name">Pec Fly poulie</span><span class="ex-detail">2×15 · 5 kg/côté</span></div>
-          <div class="ex-row"><span class="ex-name">Dips machine</span><span class="ex-detail">3×12 · 10 kg</span></div>
-          <div class="ex-row"><span class="ex-name">Tirage vertical</span><span class="ex-detail">3×12 · 40 kg</span></div>
-          <div class="ex-row"><span class="ex-name">Extension lombaire</span><span class="ex-detail">2×15 · 10 kg</span></div>
+          <div class="ex-row"><div class="ex-dot"></div><span class="ex-name">Chest Press</span><span class="ex-detail">3×12 · 15 kg/côté</span></div>
+          <div class="ex-row"><div class="ex-dot"></div><span class="ex-name">Tirage horizontal prise serrée</span><span class="ex-detail">3×12 · 35 kg</span></div>
+          <div class="ex-row"><div class="ex-dot"></div><span class="ex-name">Pec Fly poulie</span><span class="ex-detail">2×15 · 5 kg/côté</span></div>
+          <div class="ex-row"><div class="ex-dot"></div><span class="ex-name">Dips machine</span><span class="ex-detail">3×12 · 10 kg</span></div>
+          <div class="ex-row"><div class="ex-dot"></div><span class="ex-name">Tirage vertical</span><span class="ex-detail">3×12 · 40 kg</span></div>
+          <div class="ex-row"><div class="ex-dot"></div><span class="ex-name">Extension lombaire</span><span class="ex-detail">2×15 · 10 kg</span></div>
         </div>
       </div>
       <div class="seance-arrow">&#8250;</div>
@@ -159,7 +148,7 @@ footer{text-align:center;padding:24px 20px;color:var(--muted);font-size:11px;let
 
   <!-- SÉANCE 5 -->
   <a class="seance-card" href="seance5_KLN.html">
-    <div class="card-accent s3"></div>
+    <div class="card-accent"></div>
     <div class="card-inner">
       <div class="seance-num">5</div>
       <div class="seance-info">
@@ -171,12 +160,37 @@ footer{text-align:center;padding:24px 20px;color:var(--muted);font-size:11px;let
           <span class="pill pill-dark">~55 min</span>
         </div>
         <div class="exercises-list">
-          <div class="ex-row"><span class="ex-name">Marche inclinée 12%</span><span class="ex-detail">10 min · v.5</span></div>
-          <div class="ex-row"><span class="ex-name">Leg Extension</span><span class="ex-detail">3×15 · 25 kg</span></div>
-          <div class="ex-row"><span class="ex-name">Gobelet Squat</span><span class="ex-detail">4×12 · 20 kg</span></div>
-          <div class="ex-row"><span class="ex-name">Leg Curl</span><span class="ex-detail">3×15 · 20 kg</span></div>
-          <div class="ex-row"><span class="ex-name">Adduction</span><span class="ex-detail">2×20 · 30 kg</span></div>
-          <div class="ex-row"><span class="ex-name">Abduction</span><span class="ex-detail">2×20 · 25 kg</span></div>
+          <div class="ex-row"><div class="ex-dot"></div><span class="ex-name">Marche inclinée 12%</span><span class="ex-detail">10 min · v.5</span></div>
+          <div class="ex-row"><div class="ex-dot"></div><span class="ex-name">Leg Extension</span><span class="ex-detail">3×15 · 25 kg</span></div>
+          <div class="ex-row"><div class="ex-dot"></div><span class="ex-name">Gobelet Squat</span><span class="ex-detail">4×12 · 20 kg</span></div>
+          <div class="ex-row"><div class="ex-dot"></div><span class="ex-name">Leg Curl</span><span class="ex-detail">3×15 · 20 kg</span></div>
+          <div class="ex-row"><div class="ex-dot"></div><span class="ex-name">Adduction</span><span class="ex-detail">2×20 · 30 kg</span></div>
+          <div class="ex-row"><div class="ex-dot"></div><span class="ex-name">Abduction</span><span class="ex-detail">2×20 · 25 kg</span></div>
+        </div>
+      </div>
+      <div class="seance-arrow">&#8250;</div>
+    </div>
+  </a>
+
+  <!-- SÉANCE 6 -->
+  <a class="seance-card" href="seance6_KLN.html">
+    <div class="card-accent"></div>
+    <div class="card-inner">
+      <div class="seance-num">6</div>
+      <div class="seance-info">
+        <div class="seance-tag">Dos &amp; Épaules</div>
+        <div class="seance-name">Dos / Épaules</div>
+        <div class="seance-pills">
+          <span class="pill pill-gold">5 exercices</span>
+          <span class="pill pill-dark">2 bi-sets</span>
+          <span class="pill pill-dark">~55 min</span>
+        </div>
+        <div class="exercises-list">
+          <div class="ex-row"><div class="ex-dot"></div><span class="ex-name">Extension lombaire</span><span class="ex-detail">2×15 · 10 kg</span></div>
+          <div class="ex-row"><div class="ex-dot"></div><span class="ex-name">Ironman</span><span class="ex-detail">3×12 · sans charge</span></div>
+          <div class="ex-row"><div class="ex-dot"></div><span class="ex-name">T-bar serré + large</span><span class="badge-biset">BI-SET</span><span class="ex-detail">3×12 · 10 kg</span></div>
+          <div class="ex-row"><div class="ex-dot"></div><span class="ex-name">Face Pull</span><span class="ex-detail">2×15 · 20 kg</span></div>
+          <div class="ex-row"><div class="ex-dot"></div><span class="ex-name">Élév. frontale + latérale poulie</span><span class="badge-biset">BI-SET</span></div>
         </div>
       </div>
       <div class="seance-arrow">&#8250;</div>
@@ -185,7 +199,7 @@ footer{text-align:center;padding:24px 20px;color:var(--muted);font-size:11px;let
 
 </main>
 
-<footer>KLN ATHLETICS &nbsp;·&nbsp; PROGRAMME P&#8209;E</footer>
+<footer>KLN Athletics &nbsp;·&nbsp; Programme P&#8209;E</footer>
 
 </body>
 </html>
